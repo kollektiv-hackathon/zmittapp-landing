@@ -1,0 +1,17 @@
+{% extends "index.twig" %}
+
+{% block content %}
+    <div class="var-page default">
+
+    	{% if title %}
+        	<h1>{{ title }}</h1>
+        {% endif %}
+
+        <div class="content">
+        	{{ post.content|wpautop }}
+
+        	<a href="{{ home_url }}" class="arrow">{{ function('string_t', 'Zurück') }}</a>
+        </div>
+
+    </div>
+{% endblock %}

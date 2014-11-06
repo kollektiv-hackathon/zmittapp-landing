@@ -1,0 +1,20 @@
+{
+  "name": "zmittapp",
+  "version": "1.0.0",
+  "description": "Zmittapp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kollektiv-hackathon/zmittapp-landing.git"
+  },
+  "author": "Kollektiv",
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "gulp-autoprefixer": "^1.0.1",
+    "gulp-concat": "^2.4.1",
+    "gulp-minify-css": "^0.3.10",
+    "gulp-rename": "^1.2.0",
+    "gulp-resolve-dependencies": "^1.0.1",
+    "gulp-sass": "^1.0.0",
+    "gulp-uglify": "^1.0.1"
+  }
+}

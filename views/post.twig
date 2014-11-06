@@ -1,0 +1,21 @@
+{% extends "index.twig" %}
+
+{% block content %}
+    <div class="var-post">
+
+		{% if title %}
+	    	<h1>{{ title }}</h1>
+	    {% endif %}
+
+        {% if render_type %}
+
+            {% include "/modules/posts/" ~ render_type|replace({'_': '-'}) ~ "/" ~ render_type|replace({'_': '-'}) ~ ".twig" %}
+
+        {% else %}
+
+            {% include "/modules/posts/default/default.twig" %}
+
+        {% endif %}
+
+    </div>
+{% endblock %}

@@ -1,0 +1,54 @@
+{% extends "index.twig" %}
+
+{% block content %}
+
+    <div class="var-page home" data-init="home">
+        
+        <div class="entry-wrapper">
+            <div class="layout-inner">
+                <h2>Hol dir die App</h2>
+            </div>
+
+            <div class="column-wrapper">
+                <div class="column">
+                    <a href="#">
+                        <div class="column-outer">
+                            
+                                <div class="column-inner">
+                                    <img src="{{ site_options.theme_uri}}/img/apple.png">
+                                </div>
+                           
+                        </div>
+                    </a>
+                </div>
+                <div class="column">
+                    <a href="#">
+                        <div class="column-outer">
+                            
+                                <div class="column-inner">
+                                    <img src="{{ site_options.theme_uri}}/img/android.png">
+                                </div>
+                            
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-wrapper">
+            <div class="slide" style="background-image: url('{{ site_options.theme_uri }}/img/firstslide.jpg');">
+                <p>Hunger?</p>
+            </div>
+
+            <div class="slide" style="background-image: url('');">
+                <p>Check</p>
+            </div>
+
+            <div class="slide" style="background-image: url('');">
+                <p style="color: #ffffff">Check</p>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}

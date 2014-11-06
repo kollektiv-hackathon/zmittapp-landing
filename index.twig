@@ -1,0 +1,61 @@
+<!--[if IE]>  <![endif]-->
+<!DOCTYPE html>
+<!--[if IE 7]> <html lang="de" class="no-js ie ie7 lte-ie8 lte-ie7"> <![endif]-->
+<!--[if IE 8]> <html lang="de" class="no-js ie ie8 lte-ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="de" class="no-js ie ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="no-js" lang="de">
+    <!--<![endif]-->
+    <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ site_options.theme_uri }}/css/main.css">
+    <title>{{ page_title }}</title>
+    <script>document.documentElement.className = document.documentElement.className.replace(/(^|\s)no-js(\s|$)/, '$1js$2');</script>
+    <meta name="viewport" content="width=device-width">
+    <script type="text/javascript" src="http://fast.fonts.net/jsapi/4f2852d4-ee1e-4934-bc95-85b2e502f5c5.js"></script>
+    <script type="text/javascript" src="{{ site_options.theme_uri }}/js/jquery.js"></script>
+    <script type="text/javascript" src="{{ site_options.theme_uri }}/js/main.js"></script>
+    
+    {{ function('wp_head') }}
+</head>
+<body>
+
+<div class="wrapper">
+  <header role="banner" class="header-wrapper" data-init="header">
+      {% include "modules/header/header.twig" %}
+  </header>
+
+  <div class="layout-outer layout-wrapper">
+
+      {% block content %}{% endblock %}
+
+
+  </div>
+
+  <div class="push"></div>
+</div>
+
+
+<footer class="layout-footer">
+
+    {% include "modules/footer/footer.twig" %}
+
+</footer>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56302987-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+{{ function('wp_footer') }}
+
+</body>
+</html>
